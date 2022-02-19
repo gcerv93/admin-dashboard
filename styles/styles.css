@@ -356,7 +356,7 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
   height: 100%;
 }
 
@@ -446,6 +446,7 @@ html, body {
 }
 
 .search img {
+  padding-left: 2rem;
   justify-self: end;
   padding-right: 0.5rem;
 }
@@ -485,6 +486,39 @@ html, body {
 .right-header>p {
   font-weight: 700;
   justify-self: start;
+}
+
+.bottom-header {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  align-items: center;
+  grid-column: span 2;
+  grid-template-columns: 1fr 10fr 10fr;
+}
+
+.big-profile-pic {
+  border-radius: 50%;
+
+  /* temp */
+  width: 75px;
+  height: 75px;
+  /* temp */
+}
+
+.bottom-header p {
+  margin: 0;
+  line-height: 2rem;
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
+.bottom-header>div>p:first-child {
+  font-size: 0.9rem;
+}
+
+.bottom-header>div>p:last-child {
+  font-size: 1.5rem;
 }
 
 .main-content {
