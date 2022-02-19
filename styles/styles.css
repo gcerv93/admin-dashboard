@@ -347,3 +347,42 @@ template {
 [hidden] {
   display: none;
 }
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100%;
+}
+
+.sidebar {
+  /* temp */
+  background-color: blue;
+  border: 1px solid black;
+  /* temp */
+
+  grid-column-start: 1;
+  grid-row: 1 / -1;
+}
+
+.header {
+  /* temp */
+  background-color: aqua;
+  border: 1px solid black;
+  /* temp */
+
+  grid-column-start: 2;
+}
+
+.main-content {
+  /* temp */
+  background-color: blueviolet;
+  border: 1px solid black;
+  /* temp */
+
+  grid-column-start: 2;
+}
