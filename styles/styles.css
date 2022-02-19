@@ -364,9 +364,29 @@ html, body {
   background-color: blue;
   border: 1px solid black;
   /* temp */
+  padding-top: 1.5rem;
+  font-family: 'Roboto', sans-serif;
 
   grid-column-start: 1;
   grid-row: 1 / -1;
+}
+
+.sidebar p {
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.sidebar-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-header>img {
+  height: 50px;
+  width: 50px;
+  justify-self: center;
 }
 
 .header {
