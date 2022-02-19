@@ -1,0 +1,1 @@
+I will be creating the Admin Dashboard project for The Odin Project, predominantly using CSS Grid for laying out items around the webpage.
