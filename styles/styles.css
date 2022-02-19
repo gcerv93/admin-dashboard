@@ -371,11 +371,12 @@ html, body {
   grid-row: 1 / -1;
 
   display: grid;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 10fr 15fr;
 }
 
 .sidebar-header p {
   margin: 0;
+  padding-bottom: 2rem;
   font-size: 2.3rem;
   font-weight: bold;
 }
@@ -391,22 +392,37 @@ html, body {
   justify-self: center;
 }
 
-.top-list {
+.top-list, .bottom-list {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
 
-.top-list>div {
-  display: grid;
-  grid-template-rows: repeat(10, 3rem);
+.top-list {
+  grid-template-rows: repeat(6, 3rem);
 }
 
-.top-list img {
+.bottom-list {
+  grid-template-rows: repeat(3, 3rem);
+}
+
+.top-list div, .bottom-list div{
+  display: grid;
+}
+
+.top-list div {
+  grid-template-rows: repeat(6, 3rem);
+}
+
+.bottom-list div {
+  grid-template-rows: repeat(3, 3rem);
+}
+
+.top-list img, .bottom-list img {
   justify-self: center;
   padding-top: 1.6rem;
 }
 
-.top-list p {
+.top-list p, .bottom-list p {
   font-size: 1.5rem;
   font-weight: 700;
 }
