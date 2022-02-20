@@ -356,7 +356,7 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   height: 100%;
 }
 
@@ -490,7 +490,7 @@ html, body {
 
 .bottom-header {
   padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   display: grid;
   align-items: center;
   grid-column: span 2;
@@ -519,6 +519,30 @@ html, body {
 
 .bottom-header>div>p:last-child {
   font-size: 1.5rem;
+}
+
+.header-buttons {
+  justify-self: right;
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+}
+
+.header-buttons button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 0.8rem;
+  width: 6rem;
+  border-radius: 5rem;
+}
+
+.header-buttons>button:first-child {
+  justify-self: end;
+}
+
+.header-buttons>button:last-child {
+  justify-self: start;
 }
 
 .main-content {
