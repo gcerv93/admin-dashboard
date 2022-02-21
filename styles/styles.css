@@ -563,7 +563,7 @@ html, body {
   padding-top: 1.5rem;
 }
 
-.main-content p {
+.main-content>p {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 700;
@@ -584,16 +584,34 @@ html, body {
 }
 
 .main-card {
-  /* temp */
-  background-color: white;
-  /* temp */
-
-  height: 225px;
-  border-radius: 10px;
   border-left: 0.5rem solid;
   /* temp */
+  background-color: white;
   border-left-color: red;
   /* temp */
+  height: 200px;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-rows: 1.8rem 1fr;
+}
+
+.main-card>p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.main-card>p:first-child {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.main-card div {
+  justify-self: end;
+}
+
+.main-card div img {
+  padding-right: 1.5rem;
 }
 
 .side-cards {
