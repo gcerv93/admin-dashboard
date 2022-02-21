@@ -589,7 +589,7 @@ html, body {
   background-color: white;
   border-left-color: red;
   /* temp */
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
   padding: 2.5rem 2rem;
   display: grid;
@@ -616,5 +616,24 @@ html, body {
 
 .side-cards {
   grid-column: 2;
-  grid-row: 1 / span 3;
+  grid-row: 2 / span 2;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 25px 3fr;
+  padding-right: 2rem;
+}
+
+.side-cards div {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.side-cards>div:last-child {
+  height: 280px;
+}
+
+.side-cards p {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
