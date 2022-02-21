@@ -552,4 +552,51 @@ html, body {
   /* temp */
 
   grid-column-start: 2;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 25px;
+  grid-auto-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+
+.main-content p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.main-content p:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.main-cards {
+  overflow: none;
+  grid-column: 1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.main-card {
+  /* temp */
+  background-color: white;
+  /* temp */
+
+  height: 225px;
+  border-radius: 10px;
+  border-left: 0.5rem solid;
+  /* temp */
+  border-left-color: red;
+  /* temp */
+}
+
+.side-cards {
+  grid-column: 2;
+  grid-row: 1 / span 3;
 }
